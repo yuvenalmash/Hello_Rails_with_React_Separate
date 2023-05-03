@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Rails with React in separate folders </b></h3>
+  <h3><b>Backend </b></h3>
 
 </div>
 
@@ -32,16 +32,14 @@
 
 **Rails with React** is a project that shows how to integrate React.js with a Rails application. It is a simple application that allows users to view random greatings each time they refresh the page.
 
+## Frontend Repository
+
+- [Frontend](https://github.com/yuvenalmash/hello-react-front-end)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Frontend</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
 
 <details>
   <summary>Backend</summary>
@@ -61,7 +59,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Display greetings in different languages**
+- **An endpoint that returns a random greeting**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,7 +77,6 @@ In order to run this project you need:
 - Ruby
 - Rails
 - PostgreSQL
-- Node.js
 
 ### Setup
 
@@ -87,7 +84,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/yuvenalmash/Hello_Rails_with_React_Separate/issues
+  git clone https://github.com/yuvenalmash/Hello_Rails_with_React_Separate
 ```
 
 ### Install
@@ -95,10 +92,8 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd Hello_Rails_with_React_Separate/hello-frontend
-  npm install
-  cd ../hello-backend
-  gem install
+  cd Hello_Rails_with_React_Separate
+  bundle install
 ```
 
 ### Setup Database
@@ -106,7 +101,6 @@ Install this project with:
 Setup the database with:
 
 ```sh
-  cd ../hello-backend
   rails db:create
   rails db:migrate
   rails db:seed
@@ -115,14 +109,33 @@ Setup the database with:
 ### Usage
 
 To run the project, execute the following command:
-- In the hello-frontend folder, run:
-```sh
-  npm start
-```
-- In the hello-backend folder, run:
+
 ```sh
   rails server
 ```
+
+### Endpoints
+
+- Return a random greeting
+
+```sh
+  GET /api/v1/messages/random
+```
+
+- Return all greetings
+
+```sh
+  GET /api/v1/messages
+```
+
+- Return a specific greeting
+
+```sh
+  GET /api/v1/messages/:id
+```
+
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -141,8 +154,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add more actions for the user**
-- [ ] **Improve UI**
+- [ ] **Add more endpoints**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
