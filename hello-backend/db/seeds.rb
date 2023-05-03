@@ -9,10 +9,10 @@
 messages =
   Message.create(
     [
-      { greeting: "[English]: Hello, World!" },
-      { greeting: "[French]: Bonjour, le monde!" },
-      { greeting: "[Italian]: Ciao, mondo!" },
+      { greeting: '[English]: Hello, World!' },
+      { greeting: '[French]: Bonjour, le monde!' },
+      { greeting: '[Italian]: Ciao, mondo!' },
       { greeting: "[Japanese]: Kon'nichiwa sekai!" },
-      { greeting: "[Swahili]: Hujambo, dunia!" }
+      { greeting: '[Swahili]: Hujambo, dunia!' }
     ]
   )
